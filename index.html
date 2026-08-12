@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120b2e">
+  <title>শুভ জন্মদিন কুসুম 🌸 | MH Labib</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+  <div class="stars" id="stars"></div>
+  <canvas id="confetti"></canvas>
+
+  <main>
+    <!-- OPENING -->
+    <section class="screen active" id="opening">
+      <div class="glass hero-card">
+        <div class="mini-badge">A LITTLE SURPRISE FOR YOU ✨</div>
+        <div class="gift" aria-hidden="true">🎁</div>
+        <p class="eyebrow">একটা ছোট্ট অনুরোধ...</p>
+        <h1>কুসুম, তোমার জন্য<br><span>একটা বিশেষ সারপ্রাইজ</span> আছে!</h1>
+        <p class="subtext">একটা একটা করে দরজা খুলবে, ছোট ছোট গেম খেলবে, আর প্রতিটা ধাপে পাবে নতুন surprise।</p>
+        <button class="primary-btn" id="startBtn">সারপ্রাইজ খুলুন ✨</button>
+        <p class="signature">Wished by <strong>MH Labib</strong></p>
+      </div>
+    </section>
+
+    <!-- MIDDLE -->
+    <section class="screen" id="mainWish">
+      <div class="topbar">
+        <div class="brand">MH <span>Labib</span></div>
+        <button class="sound-btn" id="soundBtn" aria-label="Sound on/off">🔊</button>
+      </div>
+
+      <div class="glass wish-card">
+        <div class="date-pill">13 AUGUST 2007 • YOUR SPECIAL DAY</div>
+        <div class="cake-wrap">
+          <div class="cake">🎂</div>
+          <div class="sparkle s1">✦</div>
+          <div class="sparkle s2">✧</div>
+          <div class="sparkle s3">✦</div>
+        </div>
+
+        <p class="eyebrow">HAPPY BIRTHDAY</p>
+        <h2>শুভ জন্মদিন,<br><span>মিষ্টি কুসুম! 🌸</span></h2>
+        <p class="wish-text">
+          তোমার জীবনের প্রতিটা নতুন সকাল হোক নতুন আশার,
+          প্রতিটা মুহূর্ত হোক হাসিতে ভরা, আর তোমার সব সুন্দর
+          স্বপ্ন একদিন সত্যি হোক। আজকের দিনটা শুধু তোমার। 💖
+        </p>
+
+        <div class="progress-area">
+          <div class="progress-label">
+            <span>Surprise unlocked</span><span id="progressText">0 / 5</span>
+          </div>
+          <div class="progress"><i id="progressBar"></i></div>
+        </div>
+
+        <button class="secondary-btn" id="candleBtn">🕯️ মোমবাতি নিভাও</button>
+      </div>
+
+      <!-- CANDLES -->
+      <div class="candle-zone" id="candleZone">
+        <p>প্রতিটি মোমবাতিতে ট্যাপ করো। প্রতিবার নতুন একটি birthday caption আসবে।</p>
+        <div class="candles" id="candles"></div>
+      </div>
+
+      <!-- SURPRISE CAPTION -->
+      <div class="surprise-box glass hidden" id="surpriseBox">
+        <div class="surprise-icon">💌</div>
+        <p class="eyebrow">NEW SURPRISE UNLOCKED</p>
+        <h3 id="surpriseTitle">একটা ছোট্ট উপহার</h3>
+        <p id="surpriseText"></p>
+        <button class="secondary-btn" id="nextTaskBtn">পরের Surprise 🎮</button>
+      </div>
+
+      <!-- TASKS -->
+      <div class="tasks glass">
+        <p class="eyebrow">SECRET MISSIONS</p>
+        <h3>আরও কিছু surprise পাওয়ার জন্য ছোট্ট game খেলো 🎮</h3>
+        <div class="task-grid">
+          <button class="task-card" data-task="memory">
+            <span>🧠</span><strong>Memory Match</strong><small>জোড়া খুঁজে নাও</small>
+          </button>
+          <button class="task-card" data-task="heart">
+            <span>💗</span><strong>Catch Hearts</strong><small>১০ সেকেন্ডে ৭টা ধরো</small>
+          </button>
+          <button class="task-card" data-task="lucky">
+            <span>🎁</span><strong>Lucky Box</strong><small>একটা বাক্স বেছে নাও</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENDING -->
+    <section class="screen" id="ending">
+      <div class="glass ending-card">
+        <div class="big-heart">💖</div>
+        <div class="mini-badge">SURPRISE COMPLETE ✨</div>
+        <h2>কুসুম, আজকের দিনটা তোমার! 🌸</h2>
+        <p>
+          জীবন তোমাকে যত দূরেই নিয়ে যাক, তোমার হাসিটা যেন সবসময়
+          এমনই সুন্দর থাকে। নতুন বছরটা হোক শান্তি, আনন্দ,
+          সাফল্য আর অসংখ্য সুন্দর স্মৃতিতে ভরা।
+        </p>
+        <div class="final-quote">
+          “কিছু মানুষ নিজের অজান্তেই একটা দিনকে আরও সুন্দর করে তোলে।”
+        </div>
+        <div class="final-sign">
+          <span>With best wishes</span>
+          <strong>MH Labib</strong>
+        </div>
+        <button class="primary-btn" id="replayBtn">আবার শুরু করো 🔄</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- GAME MODAL -->
+  <div class="modal" id="gameModal">
+    <div class="game-panel glass">
+      <button class="close-btn" id="closeGame">×</button>
+      <div id="gameContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <footer>this web developed by <strong>MH Labib</strong></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
